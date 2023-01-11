@@ -28,6 +28,8 @@ function getBody() {
   **2. 学习过程中是否有存在的问题？**
 
   ## 关于如何写每日任务：
-    [如何写每日任务](https://github.com/kongmingLatern/daily_plan/blob/main/README.md)
+
+  [如何写每日任务](https://github.com/kongmingLatern/daily_plan/blob/main/README.md)
+
     `
 }
