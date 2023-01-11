@@ -18,6 +18,10 @@ function getTitle() {
   return dayjs().format('YYYY-MM-DD')
 }
 
+// 2023-01-11 你学习了哪些知识
+
 function getBody() {
-  return '[如何写每日任务](https://github.com/cuixiaorui/study-every-day/blob/main/sed/daily-task.md)'
+  return `${getTitle()}  '你学习了哪些知识？' 
+    [如何写每日任务](https://github.com/kongmingLatern/daily_plan/blob/main/README.md)
+    `
 }
