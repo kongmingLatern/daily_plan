@@ -19693,33 +19693,28 @@ module.exports = require("zlib");
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-const { Octokit } = __nccwpck_require__(7467);
-const core = __nccwpck_require__(2186);
-const dayjs = __nccwpck_require__(7401);
-// nodejs12
+const { Octokit } = __nccwpck_require__(7467)
+const core = __nccwpck_require__(2186)
+const dayjs = __nccwpck_require__(7401)
 
-const token = core.getInput("token");
+const token = core.getInput('token')
 const octokit = new Octokit({
   auth: token,
-});
-
-// octokit api create issue
+})
 
 octokit.rest.issues.create({
-  owner: "cuixiaorui",
-  repo: "teach-create-issues-action",
+  owner: 'kongminglatern',
+  repo: 'daily_plan',
   title: getTitle(),
   body: getBody(),
-});
-
-// YYYY-MM-DD
+})
 
 function getTitle() {
-  return dayjs().format("YYYY-MM-DD");
+  return dayjs().format('YYYY-MM-DD')
 }
 
 function getBody() {
-  return "[如何写每日任务](https://github.com/cuixiaorui/study-every-day/blob/main/sed/daily-task.md)";
+  return '[如何写每日任务](https://github.com/cuixiaorui/study-every-day/blob/main/sed/daily-task.md)'
 }
 
 })();
