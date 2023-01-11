@@ -15,7 +15,8 @@ octokit.rest.issues.create({
 })
 
 function getTitle() {
-  return dayjs().format('YYYY-MM-DD')
+  // 调整成中国时间,否则在虚拟机里运行的是 UTC
+  return dayjs().add('8', 'hour').format('YYYY-MM-DD')
 }
 
 // 2023-01-11 你学习了哪些知识
