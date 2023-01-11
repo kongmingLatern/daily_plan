@@ -21,7 +21,13 @@ function getTitle() {
 // 2023-01-11 你学习了哪些知识
 
 function getBody() {
-  return `${getTitle()}  '你学习了哪些知识？' 
+  return `## ${getTitle()}
+
+  **1. 你学习了哪些知识？**
+
+  **2. 学习过程中是否有存在的问题？**
+
+  ## 关于如何写每日任务：
     [如何写每日任务](https://github.com/kongmingLatern/daily_plan/blob/main/README.md)
     `
 }
