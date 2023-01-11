@@ -8,8 +8,8 @@ const octokit = new Octokit({
 })
 
 octokit.rest.issues.create({
-  owner: 'cuixiaorui',
-  repo: 'teach-create-issues-action',
+  owner: 'kongminglatern',
+  repo: 'daily_plan',
   title: getTitle(),
   body: getBody(),
 })
